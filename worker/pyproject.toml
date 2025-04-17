@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "worker"
+version = "0.1.0"
+description = "Worker service for website parser"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+celery = "^5.3.6"
+redis = "^5.0.1"
+sqlalchemy = "^2.0.23"
+psycopg2-binary = "^2.9.9"
+aiohttp = "^3.9.1"
+beautifulsoup4 = "^4.12.2"
+lxml = "^4.9.3"
+python-dotenv = "^1.0.0"
+pydantic-settings = "^2.1.0"
+pydantic = "^2.6.1"
+requests = "^2.31.0"
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.5"
+pytest-aiohttp = "^1.0.5"
+flower = "^2.0.1"
+asyncpg = "^0.29.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 

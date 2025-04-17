@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "bot"
+version = "0.1.0"
+description = "Telegram bot for website price parsing"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.4.1"
+python-dotenv = "^1.0.1"
+pydantic = "^2.6.1"
+pydantic-settings = "^2.1.0"
+pandas = "^2.2.1"
+openpyxl = "^3.1.2"
+xlrd = "^2.0.1"
+aiohttp = "^3.9.3"
+redis = "^5.0.1"
+sqlalchemy = "^2.0.27"
+psycopg2-binary = "^2.9.9"
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.5"
+pytest-aiohttp = "^1.0.5"
+beautifulsoup4 = "^4.12.3"
+lxml = "^5.1.0"
+celery = "^5.3.6"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 
